@@ -1,0 +1,12 @@
+ul.errorlist{
+    padding: 0;
+}
+ul.errorlist li {
+    list-style: none;
+    display: inline-block;
+    color: white;
+    background-color: #ff0000;
+    padding: 2px 12px;
+    margin: 0;
+    font-size: 12px;
+}

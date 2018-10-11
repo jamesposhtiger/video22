@@ -1,0 +1,13 @@
+/.idea/
+/venv/
+*.pyc
+*.pyo
+__pycache__/
+/static/
+/media/
+*settings_local.py
+*.mo
+/*.log
+/*.pid
+/*.sqlite3
+/sources/

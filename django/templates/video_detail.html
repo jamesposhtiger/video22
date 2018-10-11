@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-2">
+            <video width="320" height="240" controls>
+                <source src="{% get_media_prefix %}{{ video.link }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="col-xs-12 visible-xs"></div>
+        <div class="col-xs-12 col-sm-1">
+            <a class="btn btn-primary" href="{% url 'download' video.pk %}">Download</a>
+            <br/>
+            <br/>
+            <a href="{% get_media_prefix %}{{ video.thumb_link }}" target="_blank">
+                <img src="{% get_media_prefix %}{{ video.thumb_link }}" alt="thumbnail" width="160" height="120">
+            </a>
+        </div>
+    </div>
+{% endblock content %}

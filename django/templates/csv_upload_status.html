@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="col-xs-12">
+            {{ form.non_field_errors }}
+            <form action="{% url 'status' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.file.errors }}
+                <div class="form-group">
+                    <label for="id_file">CSV File input</label>
+                    <input type="file" id="id_file" name="file">
+                </div>
+                {{ form.template.errors }}
+                <div class="form-group">
+                    <label for="{{ form.template.id_for_label }}">Template:</label>
+                    {{ form.template }}
+                </div>
+                <button type="submit" class="btn btn-success">Upload</button>
+            </form>
+        </div>
+        <div class="col-xs-12">
+            <table id="data-row-items" class="table table-striped">
+                <tr>
+                    <td> Datetime</td>
+                    <td> File</td>
+                    <td> Rows</td>
+                    <td> New</td>
+                    <td> Process</td>
+                    <td> Ready</td>
+                    <td> Error</td>
+                    <td> Output CSV</td>
+                    <td> Sample</td>
+                    <td> Thumbnail</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    {% include 'backbone/data-row-item.html' %}
+{% endblock content %}

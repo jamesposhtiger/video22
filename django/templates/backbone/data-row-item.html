@@ -1,0 +1,19 @@
+<script type="text/template" id="data-row-template">
+    {% verbatim %}
+    <td>{{ datetime }}</td>
+    <td><a href="{{ file }}" target="_blank">{{ file }}</a></td>
+    <td class="info">{{ rows }}</td>
+    <td class="active">{{ created }}</td>
+    <td class="warning">{{ active }}</td>
+    <td class="success">{{ ready }}</td>
+    <td class="danger">{{ error }}</td>
+    <td class=""><a class="btn btn-default" href="{{ generate_url }}">Generate...</a></td>
+    <td class=""><a href="{{ sample.video_file }}" target="_blank">{{ sample.video_file }}</a></td>
+    <td class=""><a href="{{ sample.thumbnail_file }}" target="_blank">
+        {% if sample.thumbnail_file %}
+        <img src="{{ sample.thumbnail_file }}" alt="thumbnail" width="100" height="80">
+        {% endif %}
+    </a></td>
+
+    {% endverbatim %}
+</script>

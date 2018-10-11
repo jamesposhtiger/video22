@@ -1,0 +1,91 @@
+{
+  "screens": {
+    "0": {
+      "images": {},
+      "texts": {
+        "name": {
+          "frame": 50,
+          "transition": {
+            "position": [
+              11,
+              157
+            ],
+            "effects": [
+              {
+                "position": [
+                  11,
+                  157
+                ],
+                "kind": "linear",
+                "time": 2.56
+              }
+            ],
+            "time": 1.92
+          },
+          "guest_field": true,
+          "template": {
+            "shadow_color": {
+              "blue": 50,
+              "green": 50,
+              "red": 50
+            },
+            "width": 1000,
+            "shadow_line": 0.05,
+            "font_size": 300,
+            "font_path": "helvetica-neue-bold.ttf",
+            "interline": 20,
+            "angle": 0,
+            "text_color": {
+              "blue": 255,
+              "green": 255,
+              "red": 255
+            },
+            "alignment": "center",
+            "height": 300
+          }
+        },
+        "company": {
+          "transition": {
+            "position": [
+              10,
+              170
+            ],
+            "effects": [
+              {
+                "position": [
+                  10,
+                  170
+                ],
+                "kind": "linear",
+                "time": 4.08
+              }
+            ],
+            "time": 9.64
+          },
+          "template": {
+            "shadow_color": {
+              "blue": 50,
+              "green": 50,
+              "red": 50
+            },
+            "width": 1000,
+            "shadow_line": 0.05,
+            "font_size": 250,
+            "font_path": "helvetica-neue-bold.ttf",
+            "interline": 20,
+            "angle": 0,
+            "text_color": {
+              "blue": 255,
+              "green": 255,
+              "red": 255
+            },
+            "alignment": "center",
+            "height": 250
+          }
+        }
+      },
+      "upper": true,
+      "name": "intel_kate"
+    }
+  }
+}
